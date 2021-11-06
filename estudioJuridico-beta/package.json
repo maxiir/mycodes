@@ -1,0 +1,12 @@
+{
+  "name": "estudiojuridico-beta",
+  "version": "1.0.0",
+  "description": "sitio web estudio juridico Julio A Roca 450 Trelew-Chubut",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Maxi Rucci",
+  "license": "ISC"
+}

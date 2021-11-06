@@ -1,0 +1,639 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*--------------btn js------------------*/
+.btn-hamburger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    top: 15px;/*margen superior*/
+    right: 30px;
+    
+    
+}
+
+/*------------navegacion-----------------*/
+
+.logo{
+    background-color:beige;
+}
+.nav-logo{
+    width: 20%;
+}
+
+.nav-main{
+    margin-top: 0;
+    font-size: 17px;
+    /*pone el contenido uno al lado del otro*/
+    display: flex;
+    /*utiliza todo el ancho*/
+    justify-content: space-between;
+    /*centra todos los elementos*/
+    align-items: center;
+    height: 60px;
+    padding: 10px 0;
+    background-color:rgba(240, 170, 48, 0.714);
+    
+}
+.nav-main ul li{
+    display: inline;
+    padding: 10px;
+}
+
+.btnhome{
+    background-color:rgba(240, 170, 48, 0);
+    border: none;
+    color: #0909098c;
+    
+}
+.btnprof{
+    background-color:rgba(240, 170, 48, 0);
+    border: none;
+    color: #0909098c;
+}
+.btncontac{
+    background-color:rgba(240, 170, 48, 0);
+    border: none;
+    color: #0909098c;
+    
+}
+
+
+
+/*----------------body------------------*/
+
+.presentacion{
+    
+    width: 100%;
+    height: 550px;
+    /*agregar imagen de fondo*/
+    background: url(./img/img-frente.jpg)no-repeat center center/cover ;
+    padding: 50px;
+    display: flex;
+    /*para q el texto quede en el medio*/
+    flex-direction: column;
+    align-items: center;
+    /*el contenido este por de bajo*/
+    justify-content: flex-end;
+    /*margen de separacion para las columnas de abajo (new cards)*/
+    margin-bottom: 20px;
+    /*trasicion de imagenes*/
+    transition-property: background;
+    transition-duration: 2s;
+}
+.presentacion:hover{
+    background: url(./img/img-atencion.jpg);
+}
+
+
+body{
+    background-color: #ffeca2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%23d9ab4e' fill-opacity='0.16'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    
+}
+
+.h2-presentacion{
+    font-family: 'Domine', serif;
+    color: aliceblue;
+}
+.p-presentacion{
+    font-family: 'Domine', serif;
+    color: white;
+}
+
+.conteiner-social{
+    margin-top: 200px;
+}
+.conteiner-suc{
+    margin-top: 200px;
+}
+.conteiner-comercial{
+    margin-top: 200px;
+}
+
+.p-familiar{
+    margin-top: -3%;
+    padding: 7%;
+    height: 65%;
+    text-align:justify
+}
+.p-civil{
+    margin-top: -3%;
+    padding: 7%;
+    height: 65%;
+    text-align:justify
+}
+.p-social{
+    margin-top: -3%;
+    padding: 7%;
+    height: 65%;
+    text-align:justify
+}
+.p-sucesion{
+    margin-top: -3%;
+    padding: 7%;
+    height: 65%;
+    text-align:justify
+}
+.p-comercial{
+    margin-top: -3%;
+    padding: 7%;
+    height: 65%;
+    text-align:justify
+}
+.conteiner{ /*contiene todo el body index*/
+    margin:  5%;
+}
+.areas{
+    margin-top: 20%;
+    font-family: 'Domine', serif;
+    text-align: center;
+    padding: 30px;
+    
+    
+}
+
+.new-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*espaciado entre cada columna*/
+    gap: 20px;
+    /*10 pixel de alto 0 de lados*/
+    margin: 10px 0;
+    margin-top: 10%;
+    padding: 7px;
+    text-align: center;
+    
+}
+
+
+/*iconos*/
+.ico-fam{
+    text-align: center;
+    font-size: 30px;
+}
+.ico-social{
+    text-align: center;
+    font-size: 30px;
+}
+.ico-suc{
+    text-align: center;
+    font-size: 30px;
+}
+.ico-civil{
+    text-align: center;
+    font-size: 30px;
+}
+.ico-comercial{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/*-------------contacto----------------------*/
+.conteiner-contac{
+    padding: 50px;
+}
+.img-mesa{
+    background: url(./img/img-mesa.jpeg);
+    width:600px;
+    height: 397px;
+    transition-duration: 2s;
+    
+}
+.img-mesa:hover{
+    background: url(./img/img-sala.jpg);
+    width:600px;
+    height: 397px;
+    transition-duration: 2s;
+    
+}
+.info-conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:  50px;
+}
+
+.h1-tel{
+    font-family: 'Domine', serif;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.ubicacion-card{
+    text-align: center;
+    font-family: 'Domine', serif;
+    background: url(./img/ubicacion.png);
+    width: -100%;
+    margin: 80px;
+    height: 550px;
+}
+
+.h1-ubi{
+    margin-top: 20%;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Domine', serif;
+}
+
+
+.card-info{
+    margin-top: 300px;
+    text-align: center;
+    font-family: 'Domine', serif;
+}
+#tel{
+    font-size: 20px;
+    text-align:center;
+    
+}
+#dir{
+    font-size: 20px;
+    
+}
+
+#orden-llegada{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.653);
+}
+.covid{
+    margin-top: 2%;
+    color: rgba(0, 0, 0, 0.653);
+    
+}
+#atencion{
+    font-size: 20px;  
+}
+#horario{
+    font-size: 20px;
+}
+.title-dir{
+    margin-top: 9%;
+}
+.title-atencion{
+    margin-top: 9%;
+}
+.title-hrs{
+    margin-top: 9%;
+}
+.btn-ver{
+    width: 200px;
+    margin-top: -4%;
+    margin-left: 42%;
+}
+
+
+/*-----------------footer------------------*/
+
+.footer{
+    margin-top: 700px;
+    width: 100%;
+    background: rgb(250, 198, 120);
+    height: 30px;
+    text-align: center;
+}
+
+/*----------profesionales--------------------*/
+.prof-presentacion{
+    
+    width: 1175px;
+    height: 560px;
+    /*agregar imagen de fondo*/
+    background: url(./img/profesional.jpeg)no-repeat center center/cover ;
+    padding: 50px;
+    display: flex;
+    /*para q el texto quede en el medio*/
+    flex-direction: column;
+    align-items: center;
+    /*el contenido este por de bajo*/
+    justify-content: flex-end;
+    /*margen de separacion para las columnas de abajo (new cards)*/
+    margin-bottom: 20px;
+    /*trasicion de imagenes*/
+    transition-property: background;
+    transition-duration: 2s;
+}
+.h2-prof{
+    color: rgba(29, 30, 31, 0.66);
+    font-size: 60px;
+    height: 20px;
+}
+.conteiner-prof{
+    width: 100%;
+    height: 1000px;
+    padding: 50px;
+}
+.espacio-prof{
+    padding: 50px;
+}
+.card-prof{
+    padding: 20px;
+}
+.ale{
+    padding: 20px;
+}
+.item-ale{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.557);
+    list-style: none;
+}
+.hr-1{
+    height: 5px;
+    margin: 50px;
+    border-top: solid 2px;
+}
+.adriana{
+    padding: 20px;  
+}
+.item-adriana{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.557);
+    list-style: none;
+}
+.hr-2{
+    height: 5px;
+    margin: 50px;
+    border-top: solid 2px;
+}
+.pepe{
+    padding: 20px;  
+}
+.item-pepe{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.557);
+    list-style: none;
+}
+
+@media (max-width:700px){
+
+    /*-----index-----*/
+    .conteiner{
+    margin: 7px ;
+    }
+    .presentacion{
+        margin-top: 70px;
+        width: 100%;
+        height: 2%;
+    }
+    .h2-presentacion{
+        
+        font-size: 20px;
+        text-align: center;
+        color: rgba(254, 254, 254, 0.673);
+        
+    }
+    .p-presentacion{
+        font-size: small;
+        text-align: center;
+        color: rgba(254, 254, 254, 0.673);
+
+    }
+    .presentacion{
+        background: url(./img/img-frente.responsive.jpg)no-repeat center center/cover ;
+    }
+    .presentacion:hover{
+        background: url(./img/img-atencion.responsive.jpg);
+    }
+
+    
+    .ico-comercial{
+        margin-top: -220px;
+    }
+    .ico-suc{
+        margin-top: -220px;
+    }
+   
+    
+    .new-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .conteiner-familia{
+        height: 750px;
+        
+    }
+    .conteiner-civil{
+        height: 750px;  
+        
+    }
+    .conteiner-social{
+        margin-top: -200%;
+    }
+    .conteiner-suc{
+        margin-top: -65%;
+    }
+    
+    .conteiner-comercial{
+        margin-top: 170%;
+    }
+
+
+    .areas{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 12px;
+    }
+
+    .p-familiar{
+        height: 30%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .p-civil{
+        height: 30%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .p-social{
+        height: -165%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .p-sucesion{
+        height: 136%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .p-comercial{
+        height: 280%;
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+    /*----profesional----*/
+    .conteiner-prof{
+        margin: 0px;
+    }
+    .prof-presentacion{
+        width: 128%;
+        margin: -14%;
+        height: 20%;
+        margin-top: 0%;
+        
+    }
+    .h2-prof{
+        font-size: 20px;
+        color: rgba(240, 248, 255, 0.714);
+    }
+    .ale{
+        font-size: 20px;
+        text-align: center;
+    }
+    .adriana{
+        font-size: 20px;
+        text-align: center;
+    }
+    .pepe{
+        font-size: 20px;
+        text-align: center;
+    }
+    .item-ale{
+        font-size: 15px;
+    }
+    .item-adriana{
+        font-size: 15px;
+    }
+    .item-pepe{
+        font-size: 15px;
+    }
+
+    /*---contacto----*/
+    .conteiner-contac{
+        margin: 1%;
+    }
+    .img-mesa{
+        display: none; /*podemos esconder un elemento*/
+    }
+    .h1-tel{
+        font-size: 20px;
+        margin: -13%;
+        margin-top: -20px;
+        margin-left: 20px;
+    }
+    .title-tel{
+        width: 109%;
+    }
+    #tel{
+        width: 93%;
+        font-size: 16px;
+        
+    }
+    .title-dir{
+        font-size: 20px;
+    }
+    #dir{
+        font-size: 16px;
+    }
+    
+    .title-atencion{
+        font-size: 20px;
+    }
+    #atencion{
+        font-size: 16px;
+    }
+    .title-hrs{
+        font-size: 20px;
+    }
+    #horario{
+        font-size: 16px;
+        height: 100px;
+    }
+    .h1-ubi{
+        height: 100px;
+        font-size: 22px;
+    }
+    
+    .ubicacion-card{
+        width: 123%; /*330px der*/
+        margin: -12%; /*-30px izq*/
+        height: 200px;
+        background: url(./img/ubicacion.responsive.png);
+    }
+    .btn-ver{
+        margin-top: 50px;
+        margin-left: 15%;
+    }
+    .importante{
+        font-size: 22px;
+    }
+    #orden-llegada{
+        font-size: 18px;
+        height: 80px;
+    }
+    .covid{
+        font-size: 16px;
+    }
+
+
+    /*---navegacion-----*/
+    
+    .nav-main ul.nav-menu{ 
+        display: block;
+        position:absolute;
+        padding: 50px;
+        top: 0;
+        background: #faa627e7;
+        width: 90%;
+        height: 30%;
+        transform: translateY(-20px); /*aparece la nav mediante el btn*/
+        transition: transform .5s ease-in-out;
+
+    }
+    .nav-main ul.nav-menu.show{
+        transform: translateY(-400px); /*se esconde la nav por el btn*/
+    }
+    .nav-logo{
+        width: 40%;
+        margin: 1%;
+    }
+    
+    
+    /*--------btn js hamburguesa---------*/
+    .btn-hamburger{
+        display: block;
+        font-size: 25px;
+        width: 0%;
+        margin: 1px;
+        color: rgba(0, 0, 0, 0.625);
+        margin-top: -1%;
+    }
+    
+    /*---footer---------*/
+    .footer{
+        font-size: 12px;
+    }
+
+}
+
+
+
+@media (min-width:700px) and (max-width:812px){
+    /*---contacto-------*/
+    .conteiner-contac{
+        margin: 2%;
+    }
+    .img-mesa{
+        display: none;
+    }
+    .espaciado{
+        display: none;
+    }
+    .info-conteiner{
+        width: 80%;
+        margin: 200px;
+        margin-top:-5%
+    }
+
+
+    /*------profesionales-------*/
+    .prof-presentacion{
+        width: 775px;
+        margin: -30px;
+        
+    }
+
+}
